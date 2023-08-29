@@ -1,0 +1,400 @@
+@media screen and (max-width: 600px) {
+  body {
+    height: auto;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.nav {
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  background-color: lightblue;
+  opacity: 0.5;
+  z-index: 2;
+}
+.nav a {
+  text-decoration: none;
+}
+@media screen and (max-width: 600px) {
+  .nav a {
+    display: none;
+  }
+}
+.nav .btn {
+  height: 50px;
+  position: relative;
+  top: 5px;
+  left: -70px;
+  background-color: orange;
+  color: white;
+}
+
+.container {
+  display: flex;
+  gap: 40px;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+.container .text, .container .container2 .card1 .img, .container2 .card1 .container .img {
+  width: 50%;
+  height: 100%;
+  position: relative;
+  top: 100px;
+}
+@media screen and (max-width: 600px) {
+  .container .text, .container .container2 .card1 .img, .container2 .card1 .container .img {
+    width: 100%;
+  }
+}
+.container .text button, .container .container2 .card1 .img button, .container2 .card1 .container .img button {
+  width: 120px;
+  height: 30px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.container .text button:hover, .container .container2 .card1 .img button:hover, .container2 .card1 .container .img button:hover {
+  border: 1px solid orange;
+  color: orange;
+  background-color: white;
+}
+.container .text h3, .container .container2 .card1 .img h3, .container2 .card1 .container .img h3 {
+  color: orange;
+}
+@media screen and (max-width: 600px) {
+  .container .img {
+    width: 100%;
+    position: relative;
+    top: 50px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .img img {
+    width: 100%;
+  }
+}
+.container .img .image {
+  height: 80vh;
+  position: relative;
+  top: 40px;
+  border-radius: 20px;
+}
+@media screen and (max-width: 600px) {
+  .container .img .image {
+    height: 50vh;
+  }
+}
+
+.container1 {
+  padding: 40px;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 600px) {
+  .container1 {
+    width: 100%;
+    height: auto;
+  }
+}
+.container1 .title {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.container1 .title p {
+  color: orange;
+}
+.container1 .card-group {
+  width: 100%;
+  gap: 10px;
+}
+.container1 .card-group .card {
+  width: 30%;
+  border: none;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .container1 .card-group .card {
+    width: 100%;
+  }
+}
+.container1 .card-group .card .card-header {
+  background-color: white;
+}
+
+.container2 {
+  width: 100%;
+  height: auto;
+  padding: 40px;
+  text-align: center;
+}
+.container2 .card-group {
+  width: 100%;
+  display: flex;
+}
+.container2 .card-group .cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.container2 .card-group .cards .card {
+  width: 31.9%;
+  box-shadow: 2px 2px 2px 2px lightgrey;
+  border-top-left-radius: 70px;
+  background-color: rgb(220, 242, 249);
+  padding-bottom: 10px;
+}
+@media screen and (max-width: 600px) {
+  .container2 .card-group .cards .card {
+    width: 100%;
+  }
+}
+.container2 .card-group .cards .card img {
+  width: 100%;
+  border-top-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  margin-top: -9px;
+}
+.container2 .card1 {
+  width: 100%;
+  height: 70vh;
+  background-color: antiquewhite;
+  display: flex;
+  margin-top: 100px;
+}
+@media screen and (max-width: 600px) {
+  .container2 .card1 {
+    width: 100%;
+    height: auto;
+  }
+}
+.container2 .card1 .text, .container2 .card1 .img {
+  width: 50%;
+  height: 100%;
+  text-align: left;
+  padding: 20px 30px;
+}
+@media screen and (max-width: 600px) {
+  .container2 .card1 .text, .container2 .card1 .img {
+    width: 100%;
+    text-align: center;
+  }
+}
+.container2 .card1 .text button, .container2 .card1 .img button {
+  width: 120px;
+  height: 30px;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
+.container2 .card1 .text button:hover, .container2 .card1 .img button:hover {
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+}
+@media screen and (max-width: 600px) {
+  .container2 .card1 .text button, .container2 .card1 .img button {
+    width: 100px;
+  }
+}
+.container2 .card1 .img {
+  width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .container2 .card1 .img {
+    display: none;
+  }
+}
+.container2 .card1 .img img {
+  width: 80%;
+  height: 120%;
+  margin-top: -55px;
+}
+@media screen and (max-width: 600px) {
+  .container2 .card1 .img img {
+    display: none;
+  }
+}
+
+.container4 {
+  width: 100%;
+  height: 100vh;
+}
+.container4 .content1 {
+  width: 100%;
+  height: 60%;
+  background-color: antiquewhite;
+  text-align: center;
+  padding: 35px 0;
+}
+@media screen and (max-width: 600px) {
+  .container4 .content1 {
+    width: 100%;
+    padding: 5px;
+  }
+}
+.container4 .content1 p {
+  color: orange;
+}
+.container4 .content1 input {
+  width: 350px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  padding: 0 20px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .container4 .content1 input {
+    width: 200px;
+  }
+}
+.container4 .content1 button {
+  width: 100px;
+  height: 35px;
+  background-color: orange;
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+@media screen and (max-width: 600px) {
+  .container4 .content1 button {
+    border-radius: 5px;
+  }
+}
+.container4 .content2 {
+  width: 100%;
+  height: 60%;
+  background-color: black;
+  display: flex;
+  color: grey;
+  gap: 30px;
+  padding: 20px 5%;
+}
+@media screen and (max-width: 600px) {
+  .container4 .content2 {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container4 .content2 p, .container4 .content2 a, .container4 .content2 img {
+    margin-left: 20px;
+  }
+}
+.container4 a {
+  text-decoration: none;
+}
+
+#Features {
+  text-align: center;
+}
+
+#product_modal {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  left: 50%;
+  top: -50%;
+  background-color: rgba(0, 0, 0, 0.4235294118);
+  box-shadow: 0 0 21px 4px rgba(34, 60, 60, 0.2);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  transform: translate(-50%, -50%);
+  transition: all 0.5s ease-in-out;
+  padding: 3px 20px;
+  z-index: 4;
+}
+@media screen and (max-width: 600px) {
+  #product_modal {
+    width: 105%;
+  }
+}
+@media screen and (max-width: 600px) {
+  #product_modal .product_modal_content table tbody {
+    font-size: 10px;
+  }
+}
+#product_modal .product_modal_content table tbody tr th td {
+  background-color: #D2DDF0;
+}
+@media screen and (max-width: 600px) {
+  #product_modal .product_modal_content table tbody tr th td {
+    width: 80px;
+  }
+}
+
+.active_Modal {
+  top: 50% !important;
+  left: 50% !important;
+}
+
+.no_active {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel-fade {
+    width: 100%;
+    position: relative;
+    left: -50px;
+  }
+}
+
+.button {
+  width: 120px;
+  height: 40px;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+}
+
+.addBtn {
+  background-color: orange;
+  border: none;
+  border-radius: 3px;
+  width: 35px;
+  height: 35px;
+  color: white;
+}
+
+#delete {
+  width: 150px;
+  height: 35px;
+  color: red;
+  background-color: lightblue;
+  border-radius: 3px;
+  border: 1px solid white;
+}
+@media screen and (max-width: 600px) {
+  #delete {
+    width: 25px;
+  }
+}
+
+#closeBtn {
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+@media screen and (max-width: 600px) {
+  #closeBtn {
+    margin-top: 40px;
+  }
+}/*# sourceMappingURL=index.css.map */
